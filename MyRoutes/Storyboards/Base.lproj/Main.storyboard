@@ -260,14 +260,6 @@
                                 <color key="textColor" red="0.48481106759999998" green="0.2641129196" blue="0.84318530560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbH-ar-82B">
-                                <rect key="frame" x="305" y="597" width="62" height="62"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="c7u-pL-PRK"/>
-                                    <constraint firstAttribute="height" constant="62" id="qbu-d4-LXK"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9P-if-Q9L">
                                 <rect key="frame" x="306" y="598" width="60" height="60"/>
                                 <constraints>
@@ -296,9 +288,7 @@
                             <constraint firstItem="TGX-QA-YhU" firstAttribute="trailing" secondItem="r9P-if-Q9L" secondAttribute="trailing" constant="9" id="4gM-VM-fSS"/>
                             <constraint firstItem="TGX-QA-YhU" firstAttribute="bottom" secondItem="M6V-OQ-mZm" secondAttribute="bottom" id="AGM-2C-zym"/>
                             <constraint firstItem="TGX-QA-YhU" firstAttribute="bottom" secondItem="VVT-iW-Rdx" secondAttribute="bottom" id="GCy-DX-EZ2"/>
-                            <constraint firstItem="TGX-QA-YhU" firstAttribute="trailing" secondItem="gbH-ar-82B" secondAttribute="trailing" constant="8" id="Grw-U4-jEL"/>
                             <constraint firstItem="TGX-QA-YhU" firstAttribute="trailing" secondItem="VVT-iW-Rdx" secondAttribute="trailing" id="Sgc-EI-1A2"/>
-                            <constraint firstItem="M6V-OQ-mZm" firstAttribute="top" secondItem="gbH-ar-82B" secondAttribute="bottom" constant="8" id="YN1-mO-DCQ"/>
                             <constraint firstItem="WN7-Iu-pja" firstAttribute="leading" secondItem="TGX-QA-YhU" secondAttribute="leading" constant="8" id="YQy-sn-mf6"/>
                             <constraint firstItem="M6V-OQ-mZm" firstAttribute="leading" secondItem="TGX-QA-YhU" secondAttribute="leading" id="dHM-p1-ObN"/>
                             <constraint firstItem="TGX-QA-YhU" firstAttribute="trailing" secondItem="M6V-OQ-mZm" secondAttribute="trailing" id="nas-R8-BZH"/>
@@ -312,8 +302,8 @@
                     <connections>
                         <outlet property="locationLabel" destination="M6V-OQ-mZm" id="EdE-A6-zq1"/>
                         <outlet property="mapView" destination="VVT-iW-Rdx" id="2Fl-7k-td5"/>
-                        <outlet property="navigateBtn" destination="WN7-Iu-pja" id="o1o-UZ-jZz"/>
-                        <outlet property="navigateBtnShadow" destination="gbH-ar-82B" id="UnT-oB-jA7"/>
+                        <outlet property="navigateBtn" destination="r9P-if-Q9L" id="QK7-wM-gPq"/>
+                        <outlet property="recenterBtn" destination="WN7-Iu-pja" id="MMx-Xl-Sub"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7q6-3g-KgM" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,7 +15,7 @@ class MapView: UIViewController {
     @IBOutlet fileprivate weak var mapView: GMSMapView!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var navigateBtn: UIButton!
-    @IBOutlet weak var navigateBtnShadow: UIView!
+    @IBOutlet weak var recenterBtn: UIButton!
     
     var destinationLat: String!
     var destinationLong: String!
@@ -35,8 +35,6 @@ class MapView: UIViewController {
 
     fileprivate func setupOtherComponents() {
         navigateBtn.layer.cornerRadius = navigateBtn.frame.height / 2
-        navigateBtnShadow.layer.cornerRadius = navigateBtnShadow.frame.height / 2
-        navigateBtnShadow.dropShadow()
     }
 
     
@@ -52,15 +50,13 @@ class MapView: UIViewController {
     
     
     fileprivate func disableNavigateBtn() {
+        recenterBtn.isHidden = true
         navigateBtn.isHidden = true
-        navigateBtn.isEnabled = false
-        navigateBtn.alpha = 0.5
     }
     
     fileprivate func enableNavigateBtn() {
+        recenterBtn.isHidden = false
         navigateBtn.isHidden = false
-        navigateBtn.isEnabled = true
-        navigateBtn.alpha = 1.0
     }
 
     func showMarker(position: CLLocationCoordinate2D){
