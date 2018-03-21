@@ -8,7 +8,7 @@ Login Credentials:
 To install the app without pain, I’d require your phone’s UDID. 
 1. Launch showmyudid.com on SAFARI only.
 2. Follow the instructions and Install the certificates(It’s safe).
-3. Send the UDID back to me, I’lll send you an installable link.
+3. Send the UDID back to me, I’ll send you an installable link.
 
 You can also install via Xcode.
 1. Open MyRoutes.xcworkspace
